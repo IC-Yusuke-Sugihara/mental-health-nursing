@@ -243,7 +243,7 @@
     "id": "theme-11",
     "category": "家族・身近な人を支えたい方へ",
     "categoryId": "family-support",
-    "priority": "中",
+    "priority": "高",
     "target": "a",
     "title": "a",
     "subtitle": "a",
@@ -258,7 +258,7 @@
       "format": "メタバース",
       "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
       "capacity": null,
-      "status": "終了"
+      "status": "受付中"
     }
   }
 ]
