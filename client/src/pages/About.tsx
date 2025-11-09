@@ -4,8 +4,42 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, Home, Users, Stethoscope } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import aboutData from "@/data/about.json";
+
+interface AboutContent {
+  hero_title: string;
+  hero_subtitle: string;
+  what_is_title: string;
+  what_is_p1: string;
+  what_is_p2: string;
+  feature_1_title: string;
+  feature_1_description: string;
+  feature_2_title: string;
+  feature_2_description: string;
+  feature_3_title: string;
+  feature_3_description: string;
+  feature_4_title: string;
+  feature_4_description: string;
+  services_title: string;
+  service_1_title: string;
+  service_1_description: string;
+  service_2_title: string;
+  service_2_description: string;
+  service_3_title: string;
+  service_3_description: string;
+  service_4_title: string;
+  service_4_description: string;
+  service_5_title: string;
+  service_5_description: string;
+  service_6_title: string;
+  service_6_description: string;
+  cta_title: string;
+  cta_description: string;
+}
 
 export default function About() {
+  const content = aboutData as AboutContent;
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -16,10 +50,10 @@ export default function About() {
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-3xl md:text-4xl font-bold mb-6">
-                精神科訪問看護について
+                {content.hero_title}
               </h1>
               <p className="text-lg text-muted-foreground">
-                こころの健康を支える、地域に根ざした専門的なケア
+                {content.hero_subtitle}
               </p>
             </div>
           </div>
@@ -31,14 +65,14 @@ export default function About() {
             <div className="max-w-4xl mx-auto">
               <Card className="mb-12">
                 <CardHeader>
-                  <CardTitle className="text-2xl">精神科訪問看護とは</CardTitle>
+                  <CardTitle className="text-2xl">{content.what_is_title}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-foreground leading-relaxed">
-                    精神科訪問看護は、精神疾患を抱える方々が住み慣れた地域や自宅で安心して生活できるよう、専門的な知識と技術を持った看護師が定期的に訪問し、支援を行うサービスです。
+                    {content.what_is_p1}
                   </p>
                   <p className="text-foreground leading-relaxed">
-                    医療機関での治療だけでなく、日常生活の中での困りごとや悩みに寄り添い、その方らしい生活を送れるようサポートします。服薬管理、症状の観察、生活リズムの調整、社会資源の活用など、幅広い支援を提供しています。
+                    {content.what_is_p2}
                   </p>
                 </CardContent>
               </Card>
@@ -49,12 +83,12 @@ export default function About() {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Home className="h-5 w-5 text-primary" />
-                      在宅での支援
+                      {content.feature_1_title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      ご自宅や生活の場に訪問し、実際の生活環境の中で必要な支援を提供します。病院では見えにくい日常の課題にも対応できます。
+                      {content.feature_1_description}
                     </p>
                   </CardContent>
                 </Card>
@@ -63,12 +97,12 @@ export default function About() {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Stethoscope className="h-5 w-5 text-primary" />
-                      専門的なケア
+                      {content.feature_2_title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      精神科看護の専門知識を持った看護師が、症状の観察、服薬管理、危機介入など、専門的なケアを提供します。
+                      {content.feature_2_description}
                     </p>
                   </CardContent>
                 </Card>
@@ -77,12 +111,12 @@ export default function About() {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Users className="h-5 w-5 text-primary" />
-                      家族支援
+                      {content.feature_3_title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      ご本人だけでなく、ご家族の相談にも応じます。介護負担の軽減や、適切な関わり方についてもアドバイスします。
+                      {content.feature_3_description}
                     </p>
                   </CardContent>
                 </Card>
@@ -91,12 +125,12 @@ export default function About() {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Heart className="h-5 w-5 text-primary" />
-                      継続的な関わり
+                      {content.feature_4_title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      定期的な訪問により、長期的な視点で回復をサポートします。信頼関係を築きながら、その方のペースに合わせた支援を行います。
+                      {content.feature_4_description}
                     </p>
                   </CardContent>
                 </Card>
@@ -105,50 +139,50 @@ export default function About() {
               {/* Services */}
               <Card className="mb-12">
                 <CardHeader>
-                  <CardTitle className="text-2xl">主な支援内容</CardTitle>
+                  <CardTitle className="text-2xl">{content.services_title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold mt-1">•</span>
                       <div>
-                        <span className="font-medium">症状の観察と健康管理</span>
-                        <p className="text-sm text-muted-foreground">心身の状態を定期的に確認し、変化に早期に気づき対応します</p>
+                        <span className="font-medium">{content.service_1_title}</span>
+                        <p className="text-sm text-muted-foreground">{content.service_1_description}</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold mt-1">•</span>
                       <div>
-                        <span className="font-medium">服薬支援</span>
-                        <p className="text-sm text-muted-foreground">正しい服薬ができるようサポートし、副作用の確認も行います</p>
+                        <span className="font-medium">{content.service_2_title}</span>
+                        <p className="text-sm text-muted-foreground">{content.service_2_description}</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold mt-1">•</span>
                       <div>
-                        <span className="font-medium">生活リズムの調整</span>
-                        <p className="text-sm text-muted-foreground">睡眠、食事、活動のリズムを整え、安定した生活を支援します</p>
+                        <span className="font-medium">{content.service_3_title}</span>
+                        <p className="text-sm text-muted-foreground">{content.service_3_description}</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold mt-1">•</span>
                       <div>
-                        <span className="font-medium">社会資源の活用支援</span>
-                        <p className="text-sm text-muted-foreground">利用できる制度やサービスの情報提供と活用をサポートします</p>
+                        <span className="font-medium">{content.service_4_title}</span>
+                        <p className="text-sm text-muted-foreground">{content.service_4_description}</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold mt-1">•</span>
                       <div>
-                        <span className="font-medium">危機介入</span>
-                        <p className="text-sm text-muted-foreground">症状の悪化や緊急時に迅速に対応し、入院を予防します</p>
+                        <span className="font-medium">{content.service_5_title}</span>
+                        <p className="text-sm text-muted-foreground">{content.service_5_description}</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold mt-1">•</span>
                       <div>
-                        <span className="font-medium">社会参加の支援</span>
-                        <p className="text-sm text-muted-foreground">就労、復学、地域活動など、社会とのつながりを支援します</p>
+                        <span className="font-medium">{content.service_6_title}</span>
+                        <p className="text-sm text-muted-foreground">{content.service_6_description}</p>
                       </div>
                     </li>
                   </ul>
@@ -156,13 +190,12 @@ export default function About() {
               </Card>
 
               {/* CTA */}
-              <div className="bg-primary/5 rounded-lg p-8 text-center">
+              <div className="bg-muted/50 rounded-lg p-8 text-center">
                 <h3 className="text-xl font-bold mb-4">
-                  もっと詳しく知りたい方へ
+                  {content.cta_title}
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  精神科訪問看護のご利用や、学びのテーマについて<br className="hidden md:block" />
-                  お気軽にお問い合わせください
+                  {content.cta_description}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact">
