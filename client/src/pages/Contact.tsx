@@ -169,13 +169,13 @@ export default function Contact() {
                       <div>
                         <p className="font-medium text-sm mb-1">Q. 参加費用はかかりますか?</p>
                         <p className="text-sm text-muted-foreground">
-                          A. テーマによって異なります。詳細はお問い合わせください。
+                          A. 全てのテーマは無料でご参加いただけます。
                         </p>
                       </div>
                       <div>
                         <p className="font-medium text-sm mb-1">Q. オンラインでの参加は可能ですか?</p>
                         <p className="text-sm text-muted-foreground">
-                          A. はい、一部のテーマではオンライン参加も可能です。
+                          A. はい、全てのテーマはメタバース（VketCloud）で開催しています。
                         </p>
                       </div>
                       <div>
