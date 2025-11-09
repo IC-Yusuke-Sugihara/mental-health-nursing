@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail } from "lucide-react";
 import { toast } from "sonner";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -16,11 +17,34 @@ export default function Contact() {
     subject: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("お問い合わせを受け付けました。後ほどご連絡いたします。");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      // EmailJSで送信
+      await emailjs.send(
+        'service_8yg5i6q',
+        'template_4c9hteo',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'iURWNIs4bCP6S8A4K'
+      );
+
+      toast.success("お問い合わせを受け付けました。後ほどご連絡いたします。");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.error("送信エラー:", error);
+      toast.error("送信に失敗しました。もう一度お試しください。");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -111,8 +135,8 @@ export default function Contact() {
                         />
                       </div>
                       
-                      <Button type="submit" className="w-full">
-                        送信する
+                      <Button type="submit" className="w-full" disabled={isSubmitting}>
+                        {isSubmitting ? "送信中..." : "送信する"}
                       </Button>
                     </form>
                   </CardContent>
