@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 import { toast } from "sonner";
 
 export default function Contact() {
@@ -130,31 +130,7 @@ export default function Contact() {
                         <div>
                           <p className="font-medium">メール</p>
                           <p className="text-sm text-muted-foreground">
-                            info@example.com
-                          </p>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-start gap-3">
-                        <Phone className="h-5 w-5 text-primary mt-1" />
-                        <div>
-                          <p className="font-medium">電話</p>
-                          <p className="text-sm text-muted-foreground">
-                            03-XXXX-XXXX
-                          </p>
-                          <p className="text-xs text-muted-foreground mt-1">
-                            受付時間: 平日 9:00-17:00
-                          </p>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-start gap-3">
-                        <MapPin className="h-5 w-5 text-primary mt-1" />
-                        <div>
-                          <p className="font-medium">所在地</p>
-                          <p className="text-sm text-muted-foreground">
-                            〒XXX-XXXX<br />
-                            東京都○○区○○ X-X-X
+                            y.sugihara@ic-metawelf.com
                           </p>
                         </div>
                       </div>
