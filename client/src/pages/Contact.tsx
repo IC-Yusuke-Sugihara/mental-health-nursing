@@ -24,10 +24,23 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      // EmailJSで送信
+      // 1. 管理者宛てにお問い合わせ内容を送信
       await emailjs.send(
         'service_8yg5i6q',
         'template_4c9hteo',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'iURWNIs4bCP6S8A4K'
+      );
+
+      // 2. 送信者宛てに確認メールを送信
+      await emailjs.send(
+        'service_8yg5i6q',
+        'template_otgf0m2',
         {
           from_name: formData.name,
           from_email: formData.email,
