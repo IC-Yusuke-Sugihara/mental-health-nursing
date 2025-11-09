@@ -238,27 +238,5 @@
       "capacity": null,
       "status": "受付中"
     }
-  },
-  {
-    "id": "theme-11",
-    "category": "家族・身近な人を支えたい方へ",
-    "categoryId": "family-support",
-    "priority": "高",
-    "target": "a",
-    "title": "a",
-    "subtitle": "a",
-    "description": "a",
-    "topics": [
-      "a"
-    ],
-    "nursingPerspective": "a",
-    "schedule": {
-      "date": "2026-03-25",
-      "time": "20:00-20:30",
-      "format": "メタバース",
-      "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
-      "capacity": null,
-      "status": "受付中"
-    }
   }
 ]
