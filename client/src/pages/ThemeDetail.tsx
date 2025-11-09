@@ -36,6 +36,18 @@ const categoryColors: Record<string, string> = {
   "crisis": "bg-red-500/10 text-red-700 border-red-500/20",
 };
 
+// ステータスごとの色設定
+const getStatusBadgeClass = (status: string) => {
+  switch (status) {
+    case "受付中":
+      return "bg-green-500 text-white border-green-600 hover:bg-green-600";
+    case "終了":
+      return "bg-black text-white border-gray-800 hover:bg-gray-900";
+    default:
+      return "bg-gray-500 text-white border-gray-600";
+  }
+};
+
 export default function ThemeDetail() {
   const [, params] = useRoute("/theme/:id");
   const themes = themesData as Theme[];
@@ -177,6 +189,7 @@ export default function ThemeDetail() {
                             </p>
                           </div>
                         </div>
+
                         <div className="flex items-start gap-3">
                           <Clock className="h-6 w-6 text-primary mt-1" />
                           <div>
@@ -184,6 +197,7 @@ export default function ThemeDetail() {
                             <p className="text-lg font-bold">{theme.schedule.time}</p>
                           </div>
                         </div>
+
                         <div className="flex items-start gap-3">
                           <Video className="h-6 w-6 text-primary mt-1" />
                           <div>
@@ -192,24 +206,39 @@ export default function ThemeDetail() {
                           </div>
                         </div>
                       </div>
+
                       <div className="flex flex-col justify-center space-y-4">
-                        <Badge className="w-fit text-base px-4 py-2 bg-green-500/20 text-green-700 border-green-500/30">
+                        {/* ステータスバッジ - 色分け適用 */}
+                        <Badge className={`w-fit text-base px-4 py-2 ${getStatusBadgeClass(theme.schedule.status)}`}>
                           {theme.schedule.status}
                         </Badge>
-                        <a 
-                          href={theme.schedule.onlineLink} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="block"
-                        >
-                          <Button size="lg" className="w-full gap-2">
-                            <Video className="h-5 w-5" />
-                            メタバース会場に参加する
-                          </Button>
-                        </a>
-                        <p className="text-sm text-muted-foreground text-center">
-                          ※ 開催時間になりましたら上記ボタンからご参加ください
-                        </p>
+                        
+                        {/* 受付中の場合のみ参加ボタンを表示 */}
+                        {theme.schedule.status === "受付中" && (
+                          <>
+                            <a 
+                              href={theme.schedule.onlineLink} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="block"
+                            >
+                              <Button size="lg" className="w-full gap-2">
+                                <Video className="h-5 w-5" />
+                                メタバース会場に参加する
+                              </Button>
+                            </a>
+                            <p className="text-sm text-muted-foreground text-center">
+                              ※ 開催時間になりましたら上記ボタンからご参加ください
+                            </p>
+                          </>
+                        )}
+                        
+                        {/* 終了の場合はメッセージを表示 */}
+                        {theme.schedule.status === "終了" && (
+                          <p className="text-sm text-muted-foreground text-center">
+                            このテーマは終了しました
+                          </p>
+                        )}
                       </div>
                     </div>
                   </CardContent>
