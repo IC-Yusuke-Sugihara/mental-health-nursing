@@ -201,23 +201,36 @@ export default function ThemeDetail() {
                         </div>
                       </div>
                       <div className="flex flex-col justify-center space-y-4">
-                        <Badge className="w-fit text-base px-4 py-2 bg-green-500/20 text-green-700 border-green-500/30">
+                        <Badge className={
+                          theme.schedule.status === "終了"
+                            ? "w-fit text-base px-4 py-2 bg-gray-500/20 text-gray-700 border-gray-500/30"
+                            : "w-fit text-base px-4 py-2 bg-green-500/20 text-green-700 border-green-500/30"
+                        }>
                           {theme.schedule.status}
                         </Badge>
-                        <a 
-                          href={theme.schedule.onlineLink} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="block"
-                        >
-                          <Button size="lg" className="w-full gap-2">
-                            <Video className="h-5 w-5" />
-                            メタバース会場に参加する
-                          </Button>
-                        </a>
-                        <p className="text-sm text-muted-foreground text-center">
-                          ※ 開催時間になりましたら上記ボタンからご参加ください
-                        </p>
+                        {theme.schedule.status !== "終了" && (
+                          <>
+                            <a 
+                              href={theme.schedule.onlineLink} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="block"
+                            >
+                              <Button size="lg" className="w-full gap-2">
+                                <Video className="h-5 w-5" />
+                                メタバース会場に参加する
+                              </Button>
+                            </a>
+                            <p className="text-sm text-muted-foreground text-center">
+                              ※ 開催時間になりましたら上記ボタンからご参加ください
+                            </p>
+                          </>
+                        )}
+                        {theme.schedule.status === "終了" && (
+                          <p className="text-sm text-muted-foreground text-center">
+                            このイベントは終了しました
+                          </p>
+                        )}
                       </div>
                     </div>
                   </CardContent>
