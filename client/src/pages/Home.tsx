@@ -117,7 +117,7 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Lightbulb className="h-8 w-8 text-green-600" />
+                  <Briefcase className="h-8 w-8 text-green-600" />
                 </div>
                 <h3 className="text-lg font-bold mb-2">実践的な学び</h3>
                 <p className="text-sm text-muted-foreground">
