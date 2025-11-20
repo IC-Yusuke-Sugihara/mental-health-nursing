@@ -20,11 +20,10 @@ interface ThemeCardProps {
 }
 
 const categoryColors: Record<string, string> = {
-  "family-support": "bg-primary/10 text-primary border-primary/20",
-  "self-care": "bg-green-500/10 text-green-700 border-green-500/20",
-  "workplace": "bg-blue-500/10 text-blue-700 border-blue-500/20",
-  "support-system": "bg-purple-500/10 text-purple-700 border-purple-500/20",
-  "crisis": "bg-red-500/10 text-red-700 border-red-500/20",
+  "understanding-relationship": "bg-primary/10 text-primary border-primary/20",
+  "lifestyle-recovery": "bg-green-500/10 text-green-700 border-green-500/20",
+  "social-preparation": "bg-blue-500/10 text-blue-700 border-blue-500/20",
+  "employment-support": "bg-purple-500/10 text-purple-700 border-purple-500/20",
 };
 
 export default function ThemeCard({ id, title, subtitle, description, priority, target, categoryId, schedule }: ThemeCardProps) {
