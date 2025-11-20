@@ -1,202 +1,194 @@
-{
-  "themes": [
-    {
-      "id": "theme-1",
-      "category": "理解と関係づくり",
-      "categoryId": "understanding-relationship",
-      "priority": "高",
-      "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
-      "title": "大切な人のこころを守る",
-      "subtitle": "家族支援の基本とコミュニケーション",
-      "description": "心配な家族への適切な声のかけ方や受診の勧め方、家族ができるサポートと避けるべき対応について学びます。また、支援者自身のメンタルケアの重要性についても触れます。",
-      "topics": [
-        "心配な家族への声のかけ方と受診の勧め方",
-        "家族ができるサポートと避けるべき対応",
-        "支援者自身のメンタルケア"
-      ],
-      "nursingPerspective": "実際の家庭環境での支援経験、家族関係の調整事例をもとに、現場で培われた実践的なアドバイスをお伝えします。",
-      "schedule": {
-        "date": "2025-11-19",
-        "time": "20:00-20:30",
-        "format": "メタバース",
-        "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
-        "capacity": "",
-        "status": "受付中"
-      }
-    },
-    {
-      "id": "theme-2",
-      "category": "理解と関係づくり",
-      "categoryId": "understanding-relationship",
-      "priority": "高",
-      "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
-      "title": "なぜ引きこもるのか",
-      "subtitle": "背景と心理を理解する",
-      "description": "引きこもりの背景にある要因(発達特性、トラウマ、社会不安など)と、本人の心の中で起きていることを学びます。「怠け」ではない実態を理解し、誤解を解いていきます。",
-      "topics": [
-        "引きこもりの背景要因(発達特性・トラウマ・社会不安)",
-        "本人の心の中で起きていること",
-        "「怠け」ではない - よくある誤解を解く"
-      ],
-      "nursingPerspective": "訪問看護の現場で出会った様々なケースから、引きこもりの多様な背景と本人の苦悩について、具体的な事例をもとにお伝えします。",
-      "schedule": {
-        "date": "2025-12-03",
-        "time": "20:00-20:30",
-        "format": "メタバース",
-        "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
-        "capacity": "",
-        "status": "受付中"
-      }
-    },
-    {
-      "id": "theme-3",
-      "category": "理解と関係づくり",
-      "categoryId": "understanding-relationship",
-      "priority": "高",
-      "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
-      "title": "拒否されないコミュニケーション術",
-      "subtitle": "信頼関係を築く第一歩",
-      "description": "プレッシャーをかけない関わり方や、日常会話から始める関係づくりの方法を学びます。NGワードとOKワードを知り、本人との対話の扉を開くコツを身につけます。",
-      "topics": [
-        "プレッシャーをかけない関わり方",
-        "日常会話から始める関係づくり",
-        "NGワードとOKワード - 言葉選びのコツ"
-      ],
-      "nursingPerspective": "家族関係の修復に成功した事例や、小さな会話が大きな変化につながった経験をもとに、実践的なコミュニケーション術をお伝えします。",
-      "schedule": {
-        "date": "2025-12-17",
-        "time": "20:00-20:30",
-        "format": "メタバース",
-        "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
-        "capacity": "",
-        "status": "受付中"
-      }
-    },
-    {
-      "id": "theme-4",
-      "category": "生活の立て直し",
-      "categoryId": "lifestyle-recovery",
-      "priority": "高",
-      "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
-      "title": "昼夜逆転・不規則な生活への対応",
-      "subtitle": "生活リズムを整える家族の関わり",
-      "description": "生活リズムを整えるための家族の関わり方や、食事・睡眠・運動の支援方法を学びます。健康管理のポイントと、受診を検討すべきタイミングについても理解を深めます。",
-      "topics": [
-        "生活リズムを整える家族の関わり方",
-        "食事・睡眠・運動の支援方法",
-        "健康管理と受診のタイミング"
-      ],
-      "nursingPerspective": "在宅での生活支援の実例や、少しずつ生活リズムが改善していったケースをもとに、焦らず着実に進める方法をお伝えします。",
-      "schedule": {
-        "date": "2025-12-31",
-        "time": "20:00-20:30",
-        "format": "メタバース",
-        "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
-        "capacity": "",
-        "status": "受付中"
-      }
-    },
-    {
-      "id": "theme-5",
-      "category": "社会参加への準備",
-      "categoryId": "social-preparation",
-      "priority": "高",
-      "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
-      "title": "部屋から出る・家から出る",
-      "subtitle": "社会参加への準備段階",
-      "description": "家族以外との関わりを増やす工夫や、デイケア・訪問支援などのサービス活用方法を学びます。安心できる居場所づくりと、段階的な外出支援のステップについても具体的に解説します。",
-      "topics": [
-        "家族以外との関わりを増やす工夫",
-        "デイケア・訪問支援などのサービス活用",
-        "居場所づくりと安全な環境設定"
-      ],
-      "nursingPerspective": "小さな一歩から社会参加につながった事例や、利用できる地域資源について、訪問看護師の視点から実践的な情報をお伝えします。",
-      "schedule": {
-        "date": "2026-01-14",
-        "time": "20:00-20:30",
-        "format": "メタバース",
-        "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
-        "capacity": "",
-        "status": "受付中"
-      }
-    },
-    {
-      "id": "theme-6",
-      "category": "社会参加への準備",
-      "categoryId": "social-preparation",
-      "priority": "高",
-      "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
-      "title": "対人スキルと自信の回復",
-      "subtitle": "社会性を取り戻すステップ",
-      "description": "コミュニケーション能力を取り戻す練習方法や、役割を持つことの大切さを学びます。ボランティアや趣味活動を通じた社会参加の方法についても具体的に紹介します。",
-      "topics": [
-        "コミュニケーション能力を取り戻す練習方法",
-        "役割を持つことの大切さ",
-        "ボランティア・趣味活動を通じた社会参加"
-      ],
-      "nursingPerspective": "小さな役割から自信を取り戻していったケースや、趣味を通じて人とつながった事例をもとに、実践的なステップをお伝えします。",
-      "schedule": {
-        "date": "2026-01-28",
-        "time": "20:00-20:30",
-        "format": "メタバース",
-        "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
-        "capacity": "",
-        "status": "受付中"
-      }
-    },
-    {
-      "id": "theme-7",
-      "category": "就労支援",
-      "categoryId": "employment-support",
-      "priority": "高",
-      "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
-      "title": "働く準備を始める",
-      "subtitle": "就労へのステップとスキル習得",
-      "description": "職業訓練や就労移行支援の活用方法、障害者雇用と一般雇用の違いについて学びます。本人のペースに合わせた段階的なステップアップの方法についても具体的に解説します。",
-      "topics": [
-        "職業訓練・就労移行支援の活用方法",
-        "障害者雇用と一般雇用の違い",
-        "本人のペースに合わせたステップアップ"
-      ],
-      "nursingPerspective": "就労準備の段階から丁寧に関わったケースや、利用できる制度・サービスについて、訪問看護の現場で得た知見をお伝えします。",
-      "schedule": {
-        "date": "2026-02-11",
-        "time": "20:00-20:30",
-        "format": "メタバース",
-        "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
-        "capacity": "",
-        "status": "受付中"
-      }
-    },
-    {
-      "id": "theme-8",
-      "category": "就労支援",
-      "categoryId": "employment-support",
-      "priority": "高",
-      "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
-      "title": "働き続けるために",
-      "subtitle": "就労後の定着支援と家族の見守り",
-      "description": "職場での困りごとへの対処方法や、再度の引きこもりを防ぐポイントを学びます。長期的な見守りと、本人の自立を支える家族の関わり方についても理解を深めます。",
-      "topics": [
-        "職場での困りごとへの対処方法",
-        "再度の引きこもりを防ぐポイント",
-        "長期的な見守りと自立への道"
-      ],
-      "nursingPerspective": "就労後も継続的に支援したケースや、職場定着のために効果的だった関わり方について、実例をもとに実践的なアドバイスをお伝えします。",
-      "schedule": {
-        "date": "2026-02-25",
-        "time": "20:00-20:30",
-        "format": "メタバース",
-        "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
-        "capacity": "",
-        "status": "受付中"
-      }
+[
+  {
+    "id": "theme-1",
+    "category": "理解と関係づくり",
+    "categoryId": "understanding-relationship",
+    "priority": "高",
+    "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
+    "title": "大切な人のこころを守る",
+    "subtitle": "家族支援の基本とコミュニケーション",
+    "description": "心配な家族への適切な声のかけ方や受診の勧め方、家族ができるサポートと避けるべき対応について学びます。また、支援者自身のメンタルケアの重要性についても触れます。",
+    "topics": [
+      "心配な家族への声のかけ方と受診の勧め方",
+      "家族ができるサポートと避けるべき対応",
+      "支援者自身のメンタルケア"
+    ],
+    "nursingPerspective": "実際の家庭環境での支援経験、家族関係の調整事例をもとに、現場で培われた実践的なアドバイスをお伝えします。",
+    "schedule": {
+      "date": "2025-11-19",
+      "time": "20:00-20:30",
+      "format": "メタバース",
+      "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
+      "capacity": "",
+      "status": "受付中"
     }
-  ],
-  "metadata": {
-    "lastUpdated": "2025-11-20",
-    "totalThemes": 8,
-    "version": "2.0",
-    "description": "引きこもり当事者の保護者・家族向け学習プログラム"
+  },
+  {
+    "id": "theme-2",
+    "category": "理解と関係づくり",
+    "categoryId": "understanding-relationship",
+    "priority": "高",
+    "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
+    "title": "なぜ引きこもるのか",
+    "subtitle": "背景と心理を理解する",
+    "description": "引きこもりの背景にある要因(発達特性、トラウマ、社会不安など)と、本人の心の中で起きていることを学びます。「怠け」ではない実態を理解し、誤解を解いていきます。",
+    "topics": [
+      "引きこもりの背景要因(発達特性・トラウマ・社会不安)",
+      "本人の心の中で起きていること",
+      "「怠け」ではない - よくある誤解を解く"
+    ],
+    "nursingPerspective": "訪問看護の現場で出会った様々なケースから、引きこもりの多様な背景と本人の苦悩について、具体的な事例をもとにお伝えします。",
+    "schedule": {
+      "date": "2025-12-03",
+      "time": "20:00-20:30",
+      "format": "メタバース",
+      "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
+      "capacity": "",
+      "status": "受付中"
+    }
+  },
+  {
+    "id": "theme-3",
+    "category": "理解と関係づくり",
+    "categoryId": "understanding-relationship",
+    "priority": "高",
+    "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
+    "title": "拒否されないコミュニケーション術",
+    "subtitle": "信頼関係を築く第一歩",
+    "description": "プレッシャーをかけない関わり方や、日常会話から始める関係づくりの方法を学びます。NGワードとOKワードを知り、本人との対話の扉を開くコツを身につけます。",
+    "topics": [
+      "プレッシャーをかけない関わり方",
+      "日常会話から始める関係づくり",
+      "NGワードとOKワード - 言葉選びのコツ"
+    ],
+    "nursingPerspective": "家族関係の修復に成功した事例や、小さな会話が大きな変化につながった経験をもとに、実践的なコミュニケーション術をお伝えします。",
+    "schedule": {
+      "date": "2025-12-17",
+      "time": "20:00-20:30",
+      "format": "メタバース",
+      "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
+      "capacity": "",
+      "status": "受付中"
+    }
+  },
+  {
+    "id": "theme-4",
+    "category": "生活の立て直し",
+    "categoryId": "lifestyle-recovery",
+    "priority": "高",
+    "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
+    "title": "昼夜逆転・不規則な生活への対応",
+    "subtitle": "生活リズムを整える家族の関わり",
+    "description": "生活リズムを整えるための家族の関わり方や、食事・睡眠・運動の支援方法を学びます。健康管理のポイントと、受診を検討すべきタイミングについても理解を深めます。",
+    "topics": [
+      "生活リズムを整える家族の関わり方",
+      "食事・睡眠・運動の支援方法",
+      "健康管理と受診のタイミング"
+    ],
+    "nursingPerspective": "在宅での生活支援の実例や、少しずつ生活リズムが改善していったケースをもとに、焦らず着実に進める方法をお伝えします。",
+    "schedule": {
+      "date": "2025-12-31",
+      "time": "20:00-20:30",
+      "format": "メタバース",
+      "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
+      "capacity": "",
+      "status": "受付中"
+    }
+  },
+  {
+    "id": "theme-5",
+    "category": "社会参加への準備",
+    "categoryId": "social-preparation",
+    "priority": "高",
+    "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
+    "title": "部屋から出る・家から出る",
+    "subtitle": "社会参加への準備段階",
+    "description": "家族以外との関わりを増やす工夫や、デイケア・訪問支援などのサービス活用方法を学びます。安心できる居場所づくりと、段階的な外出支援のステップについても具体的に解説します。",
+    "topics": [
+      "家族以外との関わりを増やす工夫",
+      "デイケア・訪問支援などのサービス活用",
+      "居場所づくりと安全な環境設定"
+    ],
+    "nursingPerspective": "小さな一歩から社会参加につながった事例や、利用できる地域資源について、訪問看護師の視点から実践的な情報をお伝えします。",
+    "schedule": {
+      "date": "2026-01-14",
+      "time": "20:00-20:30",
+      "format": "メタバース",
+      "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
+      "capacity": "",
+      "status": "受付中"
+    }
+  },
+  {
+    "id": "theme-6",
+    "category": "社会参加への準備",
+    "categoryId": "social-preparation",
+    "priority": "高",
+    "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
+    "title": "対人スキルと自信の回復",
+    "subtitle": "社会性を取り戻すステップ",
+    "description": "コミュニケーション能力を取り戻す練習方法や、役割を持つことの大切さを学びます。ボランティアや趣味活動を通じた社会参加の方法についても具体的に紹介します。",
+    "topics": [
+      "コミュニケーション能力を取り戻す練習方法",
+      "役割を持つことの大切さ",
+      "ボランティア・趣味活動を通じた社会参加"
+    ],
+    "nursingPerspective": "小さな役割から自信を取り戻していったケースや、趣味を通じて人とつながった事例をもとに、実践的なステップをお伝えします。",
+    "schedule": {
+      "date": "2026-01-28",
+      "time": "20:00-20:30",
+      "format": "メタバース",
+      "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
+      "capacity": "",
+      "status": "受付中"
+    }
+  },
+  {
+    "id": "theme-7",
+    "category": "就労支援",
+    "categoryId": "employment-support",
+    "priority": "高",
+    "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
+    "title": "働く準備を始める",
+    "subtitle": "就労へのステップとスキル習得",
+    "description": "職業訓練や就労移行支援の活用方法、障害者雇用と一般雇用の違いについて学びます。本人のペースに合わせた段階的なステップアップの方法についても具体的に解説します。",
+    "topics": [
+      "職業訓練・就労移行支援の活用方法",
+      "障害者雇用と一般雇用の違い",
+      "本人のペースに合わせたステップアップ"
+    ],
+    "nursingPerspective": "就労準備の段階から丁寧に関わったケースや、利用できる制度・サービスについて、訪問看護の現場で得た知見をお伝えします。",
+    "schedule": {
+      "date": "2026-02-11",
+      "time": "20:00-20:30",
+      "format": "メタバース",
+      "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
+      "capacity": "",
+      "status": "受付中"
+    }
+  },
+  {
+    "id": "theme-8",
+    "category": "就労支援",
+    "categoryId": "employment-support",
+    "priority": "高",
+    "target": "引きこもり当事者の保護者・家族・関係者(教員・行政)",
+    "title": "働き続けるために",
+    "subtitle": "就労後の定着支援と家族の見守り",
+    "description": "職場での困りごとへの対処方法や、再度の引きこもりを防ぐポイントを学びます。長期的な見守りと、本人の自立を支える家族の関わり方についても理解を深めます。",
+    "topics": [
+      "職場での困りごとへの対処方法",
+      "再度の引きこもりを防ぐポイント",
+      "長期的な見守りと自立への道"
+    ],
+    "nursingPerspective": "就労後も継続的に支援したケースや、職場定着のために効果的だった関わり方について、実例をもとに実践的なアドバイスをお伝えします。",
+    "schedule": {
+      "date": "2026-02-25",
+      "time": "20:00-20:30",
+      "format": "メタバース",
+      "onlineLink": "https://ic-sushihara.cloud.vket.com/worlds/dSnHVN3i/main.html?worldid=dSnHVN3i",
+      "capacity": "",
+      "status": "受付中"
+    }
   }
-}
+]
