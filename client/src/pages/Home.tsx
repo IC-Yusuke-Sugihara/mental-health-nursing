@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import ThemeCard from "@/components/ThemeCard";
 import { Button } from "@/components/ui/button";
 import themesData from "@/data/themes.json";
-import { Heart, Users, Lightbulb } from "lucide-react";
+import { Heart, Users, Briefcase, Clock } from "lucide-react";
 
 interface Theme {
   id: string;
@@ -27,23 +27,39 @@ interface Theme {
   };
 }
 
-const categories = [
-  { id: "family-support", name: "家族・身近な人を支えたい方へ", icon: Heart },
-  { id: "self-care", name: "自分自身のこころと向き合いたい方へ", icon: Lightbulb },
-  { id: "workplace", name: "職場でメンタルヘルスを支えたい方へ", icon: Users },
-  { id: "support-system", name: "知っておきたい制度と支援", icon: Lightbulb },
-  { id: "crisis", name: "危機に備える・命を守る", icon: Heart },
-];
+interface Category {
+  id: string;
+  name: string;
+  description: string;
+}
+
+interface ThemesData {
+  categories: Category[];
+  themes: Theme[];
+}
+
+// カテゴリーごとのアイコンマッピング
+const categoryIcons: Record<string, typeof Heart> = {
+  "understanding-relationship": Heart,
+  "lifestyle-recovery": Clock,
+  "social-preparation": Users,
+  "employment-support": Briefcase,
+};
 
 export default function Home() {
-  const themes = themesData as Theme[];
+  const data = themesData as ThemesData;
+  const themes = data.themes;
+  const categories = data.categories.map(cat => ({
+    ...cat,
+    icon: categoryIcons[cat.id] || Heart
+  }));
 
   const themesByCategory = useMemo(() => {
     return categories.map(category => ({
       ...category,
       themes: themes.filter(theme => theme.categoryId === category.id)
     }));
-  }, [themes]);
+  }, [themes, categories]);
 
   return (
     <div className="min-h-screen flex flex-col">
