@@ -67,7 +67,11 @@ export default function ThemeCard({ id, title, subtitle, description, priority, 
                 <Clock className="h-4 w-4 text-primary" />
                 <span>{schedule.time} ({schedule.format})</span>
               </div>
-              <Badge variant="outline" className="bg-green-500/10 text-green-700 border-green-500/20">
+              <Badge variant="outline" className={
+                schedule.status === "終了" 
+                  ? "bg-gray-500/20 text-gray-700 border-gray-500/30"
+                  : "bg-green-500/10 text-green-700 border-green-500/20"
+              }>
                 {schedule.status}
               </Badge>
             </div>
