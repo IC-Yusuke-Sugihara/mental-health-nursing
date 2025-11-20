@@ -28,10 +28,11 @@ interface Theme {
 }
 
 const categories = [
-  { id: "understanding-relationship", name: "理解と関係づくり", icon: Heart },
-  { id: "lifestyle-recovery", name: "生活の立て直し", icon: Lightbulb },
-  { id: "social-preparation", name: "社会参加への準備", icon: Users },
-  { id: "employment-support", name: "就労支援", icon: Lightbulb },
+  { id: "family-support", name: "家族・身近な人を支えたい方へ", icon: Heart },
+  { id: "self-care", name: "自分自身のこころと向き合いたい方へ", icon: Lightbulb },
+  { id: "workplace", name: "職場でメンタルヘルスを支えたい方へ", icon: Users },
+  { id: "support-system", name: "知っておきたい制度と支援", icon: Lightbulb },
+  { id: "crisis", name: "危機に備える・命を守る", icon: Heart },
 ];
 
 export default function Home() {
