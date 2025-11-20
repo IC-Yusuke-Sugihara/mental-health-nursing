@@ -26,18 +26,6 @@ const categoryColors: Record<string, string> = {
   "employment-support": "bg-purple-500/10 text-purple-700 border-purple-500/20",
 };
 
-// ステータスごとの色設定
-const getStatusBadgeClass = (status: string) => {
-  switch (status) {
-    case "受付中":
-      return "bg-green-500 text-white border-green-600";
-    case "終了":
-      return "bg-black text-white border-gray-800";
-    default:
-      return "bg-gray-500 text-white border-gray-600";
-  }
-};
-
 export default function ThemeCard({ id, title, subtitle, description, priority, target, categoryId, schedule }: ThemeCardProps) {
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
@@ -69,7 +57,6 @@ export default function ThemeCard({ id, title, subtitle, description, priority, 
           <p className="text-sm text-muted-foreground line-clamp-3 mb-4">
             {description}
           </p>
-          
           {schedule && (
             <div className="space-y-2 mb-4 pb-4 border-b">
               <div className="flex items-center gap-2 text-sm text-foreground">
@@ -80,14 +67,11 @@ export default function ThemeCard({ id, title, subtitle, description, priority, 
                 <Clock className="h-4 w-4 text-primary" />
                 <span>{schedule.time} ({schedule.format})</span>
               </div>
-              
-              {/* ステータスバッジ - 色分け適用 */}
-              <Badge className={getStatusBadgeClass(schedule.status)}>
+              <Badge variant="outline" className="bg-green-500/10 text-green-700 border-green-500/20">
                 {schedule.status}
               </Badge>
             </div>
           )}
-          
           <div className="flex items-center text-primary text-sm font-medium group-hover:gap-2 transition-all">
             詳しく見る
             <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
