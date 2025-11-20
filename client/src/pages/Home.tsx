@@ -48,18 +48,20 @@ const categoryIcons: Record<string, typeof Heart> = {
 
 export default function Home() {
   const data = themesData as ThemesData;
-  const themes = data.themes;
-  const categories = data.categories.map(cat => ({
-    ...cat,
-    icon: categoryIcons[cat.id] || Heart
-  }));
+  
+  const categories = useMemo(() => {
+    return data.categories.map(cat => ({
+      ...cat,
+      icon: categoryIcons[cat.id] || Heart
+    }));
+  }, []);
 
   const themesByCategory = useMemo(() => {
     return categories.map(category => ({
       ...category,
-      themes: themes.filter(theme => theme.categoryId === category.id)
+      themes: data.themes.filter(theme => theme.categoryId === category.id)
     }));
-  }, [themes, categories]);
+  }, [categories]);
 
   return (
     <div className="min-h-screen flex flex-col">
