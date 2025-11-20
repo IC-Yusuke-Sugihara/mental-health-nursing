@@ -29,23 +29,10 @@ interface Theme {
 }
 
 const categoryColors: Record<string, string> = {
-  "family-support": "bg-primary/10 text-primary border-primary/20",
-  "self-care": "bg-green-500/10 text-green-700 border-green-500/20",
-  "workplace": "bg-blue-500/10 text-blue-700 border-blue-500/20",
-  "support-system": "bg-purple-500/10 text-purple-700 border-purple-500/20",
-  "crisis": "bg-red-500/10 text-red-700 border-red-500/20",
-};
-
-// ステータスごとの色設定
-const getStatusBadgeClass = (status: string) => {
-  switch (status) {
-    case "受付中":
-      return "bg-green-500 text-white border-green-600 hover:bg-green-600";
-    case "終了":
-      return "bg-black text-white border-gray-800 hover:bg-gray-900";
-    default:
-      return "bg-gray-500 text-white border-gray-600";
-  }
+  "understanding-relationship": "bg-orange-500/10 text-orange-700 border-orange-500/20",
+  "lifestyle-recovery": "bg-green-500/10 text-green-700 border-green-500/20",
+  "social-preparation": "bg-blue-500/10 text-blue-700 border-blue-500/20",
+  "employment-support": "bg-purple-500/10 text-purple-700 border-purple-500/20",
 };
 
 export default function ThemeDetail() {
@@ -189,7 +176,6 @@ export default function ThemeDetail() {
                             </p>
                           </div>
                         </div>
-
                         <div className="flex items-start gap-3">
                           <Clock className="h-6 w-6 text-primary mt-1" />
                           <div>
@@ -197,7 +183,6 @@ export default function ThemeDetail() {
                             <p className="text-lg font-bold">{theme.schedule.time}</p>
                           </div>
                         </div>
-
                         <div className="flex items-start gap-3">
                           <Video className="h-6 w-6 text-primary mt-1" />
                           <div>
@@ -206,39 +191,24 @@ export default function ThemeDetail() {
                           </div>
                         </div>
                       </div>
-
                       <div className="flex flex-col justify-center space-y-4">
-                        {/* ステータスバッジ - 色分け適用 */}
-                        <Badge className={`w-fit text-base px-4 py-2 ${getStatusBadgeClass(theme.schedule.status)}`}>
+                        <Badge className="w-fit text-base px-4 py-2 bg-green-500/20 text-green-700 border-green-500/30">
                           {theme.schedule.status}
                         </Badge>
-                        
-                        {/* 受付中の場合のみ参加ボタンを表示 */}
-                        {theme.schedule.status === "受付中" && (
-                          <>
-                            <a 
-                              href={theme.schedule.onlineLink} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="block"
-                            >
-                              <Button size="lg" className="w-full gap-2">
-                                <Video className="h-5 w-5" />
-                                メタバース会場に参加する
-                              </Button>
-                            </a>
-                            <p className="text-sm text-muted-foreground text-center">
-                              ※ 開催時間になりましたら上記ボタンからご参加ください
-                            </p>
-                          </>
-                        )}
-                        
-                        {/* 終了の場合はメッセージを表示 */}
-                        {theme.schedule.status === "終了" && (
-                          <p className="text-sm text-muted-foreground text-center">
-                            このテーマは終了しました
-                          </p>
-                        )}
+                        <a 
+                          href={theme.schedule.onlineLink} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <Button size="lg" className="w-full gap-2">
+                            <Video className="h-5 w-5" />
+                            メタバース会場に参加する
+                          </Button>
+                        </a>
+                        <p className="text-sm text-muted-foreground text-center">
+                          ※ 開催時間になりましたら上記ボタンからご参加ください
+                        </p>
                       </div>
                     </div>
                   </CardContent>
